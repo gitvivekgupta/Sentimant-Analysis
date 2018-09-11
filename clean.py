@@ -84,7 +84,6 @@ def build_vocab(text):
         # turn a doc into clean tokens
         processed_text = handle_emojis(lower_text)
         final_text = preprocess_text(processed_text)
-        print final_text
         #tokenize
         tokenizer = RegexpTokenizer(r'\w+')
         tokens = tokenizer.tokenize(final_text)
