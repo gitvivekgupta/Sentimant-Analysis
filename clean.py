@@ -12,42 +12,40 @@ from nltk.tokenize import RegexpTokenizer
 from collections import Counter
  
 
-# save list to file
+
 def save_list(tokens, filename):
-    # convert tokens to a single blob of text
+   
     data = '\n'.join(tokens) + "\n"
-    # open file
+
     file = open(filename,'a')
-    # write text
+   
     file.write(data)
-    # close file
+   
     file.close()
 
 
 
 def preprocess_text(preprocess_text):
-    # Remove punctuation
+   
     exclude = set(string.punctuation)
     preprocess_text = ''.join(ch for ch in preprocess_text if ch not in exclude)                          #
-    # preprocess_text = preprocess_text.strip('\'"?!,.():;')
-    # Convert more than 2 letter repetitions to 2 letter
-    # funnnnny --> funny
+    
     preprocess_text = re.sub(r'(.)\1+', r'\1\1', preprocess_text)
-    # Remove - & '
+ 
     preprocess_text = re.sub(r'(-|\')', '', preprocess_text)
-    # Replaces #hashtag with hashtag
+ 
     preprocess_text = re.sub(r'#(\S+)', r' \1 ', preprocess_text)
-    # Replace 2+ dots with space
+   
     preprocess_text = re.sub(r'\.{2,}', ' ', preprocess_text)
-    # Strip space, " and ' from text
+   
     preprocess_text = preprocess_text.strip(' "\'')
-    # Replace @handle with the word USER_MENTION
+   
     preprocess_text = re.sub(r'@[\S]+', 'USER_MENTION', preprocess_text)
-    # Replaces URLs with the word URL
+    
     preprocess_text = re.sub(r'((www\.[\S]+)|(https://[\S]+))', ' URL ', preprocess_text)
-    # Replace multiple spaces with a single space
+    
     preprocess_text = re.sub(r'\s+', ' ', preprocess_text)
-    # removing http/url
+    
     preprocess_text = re.sub(r'http', '', preprocess_text)
     preprocess_text = re.sub(r'url', '', preprocess_text)
     preprocess_text = re.sub(r'ensuffix', '', preprocess_text)
@@ -59,15 +57,6 @@ def preprocess_text(preprocess_text):
 
 
 def coded_emojis(processed_text):
-
-
-
-#----------------------------------------------------------------------------------------------
-#--------------\ud83d\ude------------------------------------------------------------------------
-#----------------------------------------------------------------------------------------------
-
-
-
 
 
 
@@ -182,7 +171,7 @@ def coded_emojis(processed_text):
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
 
-#----------------
+
 
     sad_emoji = re.compile(u"(\ud83d[\ude13-\ude16])" "+", flags=re.UNICODE)
     processed_text = sad_emoji.sub(r' EMO_NEG ', processed_text)
@@ -253,20 +242,6 @@ def coded_emojis(processed_text):
 
 
 
-
-#--------------------------------------------------------------------------------------------------------------------------------
-#---------------------------------------------------------------------------------------------------------------------------
-#--------------\ud83e\udd----------
-
-
-
-
-
-
-
-
-
-
     happy_emoji = re.compile(u"(\ud83e[\udd16-\udd19])" "+", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
@@ -325,7 +300,7 @@ def coded_emojis(processed_text):
 
 
 
-#--------
+
 
 
     sad_emoji = re.compile(u"(\ud83e[\udd14-\udd15])" "+", flags=re.UNICODE)
@@ -402,23 +377,14 @@ def coded_emojis(processed_text):
 
 
 
-
-#--------------------------------------------------------------------------------------------------------------------------------------
-#--------------\u263a\----
-#-------------------------------------------------------------------------------------------------------------------------------------
- 
     happy_emoji = re.compile(u"(\u263a\ufe0f)", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
-#--------------------------------------------------------------------------------------------------------------------------------------
-#--------------\u2615\----
-#-------------------------------------------------------------------------------------------------------------------------------------
- 
+
     happy_emoji = re.compile(u"(\u2615\ufe0f)", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
-#-----------------------------------------
-#--------------\u2639\----
+
 
     sad_emoji = re.compile(u"(\u2639\ufe0f)", flags=re.UNICODE)
     processed_text = sad_emoji.sub(r' EMO_NEG ', processed_text)
@@ -429,12 +395,6 @@ def coded_emojis(processed_text):
 
 
 
-
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------
-#----------------------------------------------------------------------------------------------------------------------------------------
-#--------------\ud83d\udc---------------------------------------------------------------------------------------------------
 
 
 
@@ -680,7 +640,7 @@ def coded_emojis(processed_text):
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
 
-#------------------
+
 
     sad_emoji = re.compile(u"(\ud83d[\udc79-\udc80])" "+", flags=re.UNICODE)
     processed_text = sad_emoji.sub(r' EMO_NEG ', processed_text)
@@ -767,14 +727,6 @@ def coded_emojis(processed_text):
 
     neutral_emoji = re.compile(u"(\ud83d\udc46)", flags=re.UNICODE)
     processed_text = neutral_emoji.sub(r' EMO_NEU ', processed_text)
-
-
-
-
-#--------------------------------------------------------------------------------------------------------------------------------
-#--------------\ud83c\udf------------------------------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 
@@ -987,7 +939,7 @@ def coded_emojis(processed_text):
     happy_emoji = re.compile(u"(\ud83c\udf6e)", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
-#----------------------
+
 
     sad_emoji = re.compile(u"(\ud83c\udf35)", flags=re.UNICODE)
     processed_text = sad_emoji.sub(r' EMO_NEG ', processed_text)
@@ -1058,23 +1010,14 @@ def coded_emojis(processed_text):
 
 
 
-
-
-
-#-----------------------------------------
-#--------------\u2620\ufe0f----
-
     sad_emoji = re.compile(u"(\u2620\ufe0f)", flags=re.UNICODE)
     processed_text = sad_emoji.sub(r' EMO_NEG ', processed_text)
 
-#-----------------------------------------
-#--------------\u270a----
+
 
     happy_emoji = re.compile(u"(\u270a)", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
 
-#-----------------------------------------
-#--------------\\u270c\ufe0f----
 
     happy_emoji = re.compile(u"(\u270c\ufe0f)", flags=re.UNICODE)
     processed_text = happy_emoji.sub(r' EMO_POS ', processed_text)
@@ -1086,21 +1029,19 @@ def coded_emojis(processed_text):
 
 def handle_emojis(text):
 
-    # shock_emoji = re.compile("[" u"\ud83d\ude31" "]+", flags=re.UNICODE)
-    # text = emoji_pattern.sub(r' EMO_NEG ', text)
-    # Smile -- :), : ), :-), (:, ( :, (-:, :')
+   
     text = re.sub(r'(:\)|:-\)|\(\s:|\(-:|:\'\))', ' EMO_POS ', text)
-    # Laugh -- :D, : D, :-D, xD, x-D, XD, X-D, :-d, :d
+   
     text = re.sub(r'(:D|:-D|x-D|X-D|:-d|:d)', ' EMO_POS ', text)
-    # Love -- <3, :*
+    
     text = re.sub(r'(<3|:\*)', ' EMO_POS ', text)
-    # Wink -- ;-), ;), ;-D, ;D, (;,  (-;
+   
     text = re.sub(r'(;-\)|;-D|\(-;)', ' EMO_POS ', text)
-    # Sad -- :-(, : (, :(, ):, )-:, -_-
+    
     text = re.sub(r'(:\(|:-\(|\)\s:|\)-:|-_-)', ' EMO_NEG ', text)
-    # Cry -- :,(, :'(, :"(
+   
     text = re.sub(r'(:,\(|:\'\(|:"\()', ' EMO_NEG ', text)
-    # Shout -- :@
+ 
     text = re.sub(r'(:\@)', ' EMO_NEG ' , text)
     text = coded_emojis(text)
 
@@ -1110,30 +1051,27 @@ def handle_emojis(text):
 
 def build_vocab(text):
     try:
-        # split into tokens by white space
-        # tokens = text.split()
+        
         lower_text = text.lower()
-        # turn a doc into clean tokens
+       
         processed_text = handle_emojis(lower_text)
         final_text = preprocess_text(processed_text)
         print final_text
-        #tokenize
+       
         tokenizer = RegexpTokenizer(r'\w+')
         tokens = tokenizer.tokenize(final_text)
-        # remove remaining tokens that are not alphabetic
+        
         tokens = [word for word in tokens if word.isalpha()]
-        # filter out stop words
         stop_words = set(stopwords.words('english'))
         tokens = [w for w in tokens if not w in stop_words]
 
-        # write to txt file
         save_list(tokens, 'testvocab.txt')
 
     except Exception as inst:
         print inst
         pass
  
-# load the document
+
 
 with open('HN-EN_train.json') as json_data:
     d = json.load(json_data)
