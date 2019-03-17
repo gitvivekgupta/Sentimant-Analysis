@@ -5,16 +5,12 @@ import string
 import collections
 from string import punctuation
 from collections import Counter
+from clean import handle_emojis
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import RegexpTokenizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer
-
-from clean import preprocess_text
-from clean import coded_emojis
-from clean import build_vocab
-from clean import handle_emojis
 
 
 
