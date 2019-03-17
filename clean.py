@@ -10,6 +10,16 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import RegexpTokenizer
  
+# save list to file
+def save_feat(tokens, filename):
+    # convert tokens to a single blob of text
+    data = tokens + "\n"
+    # open file
+    file = open(filename,'a')
+    # write text
+    file.write(data)
+    # close file
+    file.close()
 
 # save list to file
 def save_list(tokens, filename):
@@ -1039,5 +1049,7 @@ for each in d:
             completed_lines_hash.add(hashValue)
 
     output_file.close()
+
+
 
 print("Done!!")
