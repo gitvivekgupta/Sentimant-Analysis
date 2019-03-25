@@ -1,10 +1,10 @@
 # Sentiment Analysis
 
+------------------------------------------------------------------------------------------------------------------------------
 
 ![sa](https://user-images.githubusercontent.com/17769945/54867871-750c5680-4dab-11e9-84a8-ea8fae5adba7.png)
 
-
-This is a successing repositiory of the previous model.
+------------------------------------------------------------------------------------------------------------------------------
 
 It will eventually have four models.
 
@@ -18,11 +18,15 @@ It will eventually have four models.
 
 5. seven_feat_model
 
+------------------------------------------------------------------------------------------
+
 # count_model
 
 simple measure task for predicting sentiment of sentence.
 
 For details open the folder and explore it yourself.
+
+------------------------------------------------------------------------------------------
 
 # one_feat_model
 
@@ -30,11 +34,15 @@ I computed a sentence level score and used it as a feature for KNN.
 
 For details open the folder and explore it yourself.
 
+------------------------------------------------------------------------------------------------------------
+
 # three_feat_model
 
 I computed three different score levels at sentence level and used them as features for KNN.
 
 For details open the folder and explore it yourself.
+
+------------------------------------------------------------------------------------------------------------
 
 # four_feat_model
 
@@ -42,13 +50,15 @@ I computed four different score levels at sentence level and used them as featur
 
 For details open the folder and explore it yourself.
 
+------------------------------------------------------------------------------------------------------------
+
 # seven_feat_model
 
 I computed seven different score levels at sentence level and used them as features for KNN.
 
 For details open the folder and explore it yourself.
 
-
+------------------------------------------------------------------------------------------------------------
 
 
 
