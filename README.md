@@ -6,7 +6,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-It will eventually have four models.
+It will eventually have all five models.
 
 1. count_model
 
