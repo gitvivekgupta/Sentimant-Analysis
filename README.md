@@ -1,4 +1,4 @@
-# Sentiment Analysis - Improved Models
+# Sentiment Analysis
 
 
 ![sa](https://user-images.githubusercontent.com/17769945/54867871-750c5680-4dab-11e9-84a8-ea8fae5adba7.png)
