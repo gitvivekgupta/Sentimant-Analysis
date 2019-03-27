@@ -57,6 +57,10 @@ For details open the folder and explore it yourself.
 
 ------------------------------------------------------------------------------------------------------------
 
+# Analysis Chart
+
+
+![chart](https://user-images.githubusercontent.com/17769945 55083166-11df3480-50c9-11e9-99cf-a3bb716da243.png)
 
 
 
