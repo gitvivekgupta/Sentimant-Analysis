@@ -60,7 +60,7 @@ For details open the folder and explore it yourself.
 # Analysis Chart
 
 
-![chart](https://user-images.githubusercontent.com/17769945/55083436-8c0fb900-50c9-11e9-9bdf-bc90e6be29ec.png)
+![chart](https://user-images.githubusercontent.com/17769945/55084125-b2822400-50ca-11e9-91ca-12faf63d2d1c.png)
 
 
 
