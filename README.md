@@ -60,8 +60,10 @@ For details open the folder and explore it yourself.
 # Analysis Chart
 
 
-![chart](https://user-images.githubusercontent.com/17769945 55083166-11df3480-50c9-11e9-99cf-a3bb716da243.png)
+![chart](https://user-images.githubusercontent.com/17769945/55083436-8c0fb900-50c9-11e9-9bdf-bc90e6be29ec.png)
 
 
 
-Modularized and improved model here: https://github.com/gitvivekgupta/Sentiment-Improved-II
+# Improved Repo
+
+**Modularized and improved model here:** https://github.com/gitvivekgupta/Sentiment-Improved-II
