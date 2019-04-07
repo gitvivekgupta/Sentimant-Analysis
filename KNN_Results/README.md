@@ -1,29 +1,20 @@
 # Sentiment Analysis
 
-------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 
 
 It will eventually have all five models.
 
-1. count_model
+1. one_feat_model
 
-2. one_feat_model
+2. three_feat_model
 
-3. three_feat_model
+3. four_feat_model
 
-4. four_feat_model
-
-5. seven_feat_model
+4. seven_feat_model
 
 ------------------------------------------------------------------------------------------
 
-# count_model
-
-simple measure task for predicting sentiment of sentence.
-
-For details open the folder and explore it yourself.
-
-------------------------------------------------------------------------------------------
 
 # one_feat_model
 
