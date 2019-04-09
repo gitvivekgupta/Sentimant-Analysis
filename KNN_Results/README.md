@@ -52,9 +52,3 @@ For details open the folder and explore it yourself.
 
 
 ![chart](https://user-images.githubusercontent.com/17769945/55084125-b2822400-50ca-11e9-91ca-12faf63d2d1c.png)
-
-
-
-# Improved Repo
-
-**Modularized and improved model here:** https://github.com/gitvivekgupta/Sentiment-Improved-II
