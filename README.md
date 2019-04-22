@@ -6,9 +6,11 @@
 
 2. KNN Model
 
-3. SVM Model
+3. SVM Models: Linear, kernel
 
-4. Tree Model
+4. Tree Models: DT, RF, GBDT
+
+5. Naive Bayes Classification Model
 
 
 # Improved Repo
