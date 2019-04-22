@@ -1,4 +1,4 @@
-# Random Forest
+# Gradient Boosted Decision Tree
 
 
 # Observation with data (three_feat_model):
