@@ -12,7 +12,8 @@
 
 5. Naive Bayes Classification Model
 
+----------------------------------------------------------------------------------------------------------------------
 
-# Improved Repo
+# Improved Model
 
 **Modularized and improved model here:** https://github.com/gitvivekgupta/Sentiment-Improved-II
