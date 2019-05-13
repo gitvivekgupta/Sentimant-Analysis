@@ -41,7 +41,7 @@ RADIAL BASIS KERNEL:
 
 SIGMOID KERNEL:
 
-![Screenshot 2019-04-07 at 8 58 22 AM](https://user-images.githubusercontent.com/17769945/55678226-8f017980-5913-11e9-84fe-3adcd1f92bed.png)
+
 
 LINEAR KERNEL:
 
